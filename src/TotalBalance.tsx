@@ -1,7 +1,7 @@
 import { useReadContract } from 'wagmi'
 
 export function TotalBalance() {
-  const { data, isLoading, error } = useReadContract({
+  const { data, isLoading } = useReadContract({
     address: '0xdac17f958d2ee523a2206206994597c13d831ec7',
     abi: [
       {
@@ -27,6 +27,8 @@ export function TotalBalance() {
     functionName: 'balanceOf',
     args: ["0xb25060DB54765467e4c7c97d153B76f77D356857"]
   })
+
+  if (isLoading) return <div>Loading...</div>
 
   return (
     <div>
