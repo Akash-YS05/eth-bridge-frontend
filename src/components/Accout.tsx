@@ -1,5 +1,3 @@
-"use client"
-
 import { useAccount, useDisconnect, useEnsAvatar, useEnsName } from "wagmi"
 import {TotalSupply} from "../TotalSupply"
 // import TotalBalance from "./TotalBalance"

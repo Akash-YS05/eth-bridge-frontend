@@ -1,4 +1,3 @@
-
 import { useConnect } from "wagmi"
 
 export default function WalletOptions() {

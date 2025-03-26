@@ -1,5 +1,3 @@
-"use client"
-
 import { useAccount, WagmiProvider } from "wagmi"
 import "./App.css"
 import { config } from "./config"
